@@ -30,34 +30,34 @@ def main() :
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
   
 # menampilkan buttons
-  st.write('MENAMPILKAN BUTTONS')
+  st.subheader('MENAMPILKAN BUTTONS')
   click_me_btn = st.button('Click Me')
   st.write(click_me_btn) #Return True kalo di Click 
   check_btn = st.checkbox('Klik Jika Setuju')
   if check_btn :
       st.write('Anda Setuju')
   
-  st.write('MENAMPILKAN RADIO BUTTONS')
+  st.subheader('MENAMPILKAN RADIO BUTTONS')
   radio_button= st.radio('Choose below',[x for x in range(1,3)])
   st.write('Anda Memilih',radio_button)
   
 # menampilkan slider
-  st.write('MENAMPILKAN SLIDER')
+  st.subheader('MENAMPILKAN SLIDER')
   age_slider = st.slider('Berapa Usia Anda',0,100)
   st.write('Usia Anda',age_slider)
   
 # menampilkan input typing
-  st.write('MENAMPILKAN INPUT TYPING')
+  st.subheader('MENAMPILKAN INPUT TYPING')
   num_input = st.number_input('Input Berapapun')
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
   
 # menampilkan sidebar
-  st.sidebar.write('MENAMPILKAN SIDEBAR')
+  st.sidebar.subheader('MENAMPILKAN SIDEBAR')
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
 
 # menampilkan columns
-  st.write('MENAMPILKAN KOLOM')
+  st.subheader('MENAMPILKAN KOLOM')
   col1, col2, col3 = st.columns(3)
   with col1:
       st.header("A cat")
@@ -74,7 +74,7 @@ def main() :
     
 # menampilkan expander 
 # dengan with atau dengan assignment 
-  st.write('MENAMPILKAN EXPANDER') 
+  st.subheader('MENAMPILKAN EXPANDER') 
   expander = st.expander("Klik Untuk Detail ")
   expander.write('Anda Telah Membuka Detail')
   
@@ -90,7 +90,7 @@ def main() :
   st.write("Outside the form")
   
 # menampilkan line chart
-  st.write('MENAMPILKAN LINE CHART') 
+  st.subheader('MENAMPILKAN LINE CHART') 
   st.line_chart(house_chart)
 
 
