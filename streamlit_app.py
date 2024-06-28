@@ -93,6 +93,26 @@ def main() :
   st.write('MENAMPILKAN LINE CHART') 
   st.line_chart(house_chart)
 
+
+# Membuat sidebar
+  st.sidebar.title("Sidebar")
+  input_text = st.sidebar.text_input("Masukkan sesuatu:")
+  input_number = st.sidebar.number_input("Masukkan angka:", min_value=0, max_value=100)
+
+# Tombol untuk memindahkan konten
+  if st.sidebar.button("Tampilkan di Mainbar"):
+     st.session_state['show_content'] = True
+  else:
+     st.session_state['show_content'] = False
+
+# Menampilkan hasil di mainbar
+  st.title("Mainbar")
+  if 'show_content' in st.session_state and st.session_state['show_content']:
+     st.write(f"Teks dari sidebar: {input_text}")
+     st.write(f"Angka dari sidebar: {input_number}")
+  else:
+     st.write("Tidak ada konten untuk ditampilkan
+
 # Insert containers separated into tabs:
 tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 tab1.write("Ini adalah Tab 1")
