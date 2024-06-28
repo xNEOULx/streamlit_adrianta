@@ -5,6 +5,9 @@ import pandas as pd
 house = pd.read_csv('house_clean.csv')
 
 def main() : 
+
+  st.write('Belajar Streamlit di Pusdiklat KU')
+  
   st.write('Minimal Example')
 
 if __name__ == '__main__' : 
