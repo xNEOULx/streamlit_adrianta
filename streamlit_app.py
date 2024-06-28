@@ -11,10 +11,11 @@ def main() :
   
 # membuat text
   st.header('Belajar Streamlit di Pusdiklat KU')
-  st.write('Minimal Example')
+  st.header('Halaman Streamlit Adrianta Ras Sembiring')
   
 # membuat header, subheader, markdown
-  st.header('Halaman Streamlit Adrianta Ras Sembiring')
+  st.write('Minimal Example')
+  st.header('This is Header')
   st.subheader('This is SubHeader')
   st.markdown('# Rendering Markdown ')
   st.write('Some Phytagorean Equation : ')
@@ -106,7 +107,7 @@ def main() :
      st.session_state['show_content'] = False
 
 # Menampilkan hasil di mainbar
-  st.title("Mainbar")
+  st.header(Mainbar")
   if 'show_content' in st.session_state and st.session_state['show_content']:
      st.write(f"Teks dari sidebar: {input_text}")
      st.write(f"Angka dari sidebar: {input_number}")
