@@ -8,7 +8,7 @@ house = pd.read_csv('house_clean.csv')
 def main() : 
 
 # membuat text
-  st.write('Belajar Streamlit di Pusdiklat KU')
+  st.header('Belajar Streamlit di Pusdiklat KU')
   st.write('Minimal Example')
 
 # membuat header, subheader, markdown
