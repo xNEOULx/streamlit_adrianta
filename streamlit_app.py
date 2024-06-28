@@ -98,8 +98,8 @@ tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 tab1.write("this is tab 1")
 tab2.write("this is tab 2")
 
-
-  st.line_chart(house_chart)
+st.write('MENAMPILKAN LINE CHART') 
+st.line_chart(house_chart)
 
 
 if __name__ == '__main__' : 
