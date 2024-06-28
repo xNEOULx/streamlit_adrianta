@@ -27,6 +27,7 @@ def main() :
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
 # menampilkan buttons
+  st.write('MENAMPILKAN BUTTONS')
   click_me_btn = st.button('Click Me')
   st.write(click_me_btn) #Return True kalo di Click 
   check_btn = st.checkbox('Klik Jika Setuju')
