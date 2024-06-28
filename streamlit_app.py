@@ -34,7 +34,8 @@ def main() :
   check_btn = st.checkbox('Klik Jika Setuju')
   if check_btn :
       st.write('Anda Setuju')
-    
+
+  st.write('MENAMPILKAN RADIO BUTTONS')
   radio_button= st.radio('Choose below',[x for x in range(1,3)])
   st.write('Anda Memilih',radio_button)
 
@@ -44,7 +45,7 @@ def main() :
   st.write('Usia Anda',age_slider)
 
 # menampilkan input typing
-  st.write('INPUT TYPING')
+  st.write('MENAMPILKAN INPUT TYPING')
   num_input = st.number_input('Input Berapapun')
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
 
