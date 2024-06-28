@@ -5,7 +5,7 @@ from st_aggrid import AgGrid
 
 #baca dataframe dari file csv 
 titanic = pd.read_csv('house_clean.csv')
-}).json()
+json()
 
 def main() : 
   st.write('Minimal Example')
