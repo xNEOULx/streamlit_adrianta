@@ -21,11 +21,11 @@ def main() :
   st.latex('c^2 = a^2+b^2')
   
 # menampilkan dataframe
-  st.title('CONTOH DATA FRAME')
+  st.subheader('CONTOH DATA FRAME')
   st.dataframe(house)
   
 # menampilkan metrics
-  st.title('MENAMPILKAN METRICS')
+  st.subheader('MENAMPILKAN METRICS')
   st.write('Metrics')
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
   
