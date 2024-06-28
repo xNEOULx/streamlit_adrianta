@@ -111,7 +111,7 @@ def main() :
      st.write(f"Teks dari sidebar: {input_text}")
      st.write(f"Angka dari sidebar: {input_number}")
   else:
-     st.write("Tidak ada konten untuk ditampilkan
+     st.write("Tidak ada konten untuk ditampilkan.")
 
 # Insert containers separated into tabs:
 tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
