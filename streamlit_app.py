@@ -99,6 +99,8 @@ tab2.write("this is tab 2")
 # You can also use "with" notation:
 with tab1:
     st.radio("Select one:", [1, 2])
+with tab2:
+    st.radio("Select one:", [1, 2])
 
 
 if __name__ == '__main__' : 
