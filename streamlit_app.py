@@ -56,17 +56,6 @@ def main() :
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
 
-#sidebar 
-  with st.sidebar.form("Data Diri"):
-      st.sidebar.write("Inside the form")
-      slider_val = st.sidebar.slider("Form slider")
-      checkbox_val = st.sidebar.checkbox("Form checkbox")
-# Every form must have a submit button.
-      submitted = st.sidebar.form_submit_button("Submit")
-      if submitted:
-          st.sidebar.write("slider", slider_val, "checkbox", checkbox_val)
-  st.sidebar.write("Outside the form")
-
 # menampilkan columns
   st.write('MENAMPILKAN KOLOM')
   col1, col2, col3 = st.columns(3)
@@ -89,7 +78,16 @@ def main() :
   expander = st.expander("Klik Untuk Detail ")
   expander.write('Anda Telah Membuka Detail')
   
-
+#sidebar 
+  with st.form("Data Diri"):
+      st.write("Inside the form")
+      slider_val = st.slider("Form slider")
+      checkbox_val = st.checkbox("Form checkbox")
+# Every form must have a submit button.
+      submitted = st.form_submit_button("Submit")
+      if submitted:
+          st.write("slider", slider_val, "checkbox", checkbox_val)
+  st.write("Outside the form")
   
 # menampilkan line chart
   st.write('MENAMPILKAN LINE CHART') 
