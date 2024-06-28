@@ -5,6 +5,8 @@ from st_aggrid import AgGrid
 # baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
 
+house_chart = pd.read_csv('house_clean.csv', usecols=['id','price'])
+
 def main() : 
 
 # membuat text
@@ -96,6 +98,7 @@ tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 tab1.write("this is tab 1")
 tab2.write("this is tab 2")
 
+st.line_chart(house_chart)
 
 if __name__ == '__main__' : 
   main()
