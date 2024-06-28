@@ -48,5 +48,9 @@ def main() :
   num_input = st.number_input('Input Berapapun')
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
 
+# menampilkan sidebar 
+  sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
+  sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
+
 if __name__ == '__main__' : 
   main()
