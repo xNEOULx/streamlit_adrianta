@@ -31,5 +31,11 @@ def main() :
   AgGrid(house)
   st.table([x for x in range(1,5)])
 
+  click_me_btn = st.button('Click Me')
+  st.write(click_me_btn) #Return True kalo di Click 
+  check_btn = st.checkbox('Klik Jika Setuju')
+  if check_btn :
+      st.write('Anda Setuju')
+
 if __name__ == '__main__' : 
   main()
