@@ -107,7 +107,7 @@ def main() :
      st.session_state['show_content'] = False
 
 # Menampilkan hasil di mainbar
-  st.header(Mainbar")
+  st.header("Mainbar")
   if 'show_content' in st.session_state and st.session_state['show_content']:
      st.write(f"Teks dari sidebar: {input_text}")
      st.write(f"Angka dari sidebar: {input_number}")
