@@ -1,4 +1,4 @@
-pip install streamlit-aggrid
+pip install streamlit-aggrid as st_aggrid
 import streamlit as st 
 import pandas as pd 
 from st_aggrid import AgGrid
