@@ -49,11 +49,13 @@ def main() :
   num_input = st.number_input('Input Berapapun')
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
 
-# menampilkan sidebar 
+# menampilkan sidebar
+  st.write('MENAMPILKAN SIDEBAR')
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
 
-#columns :
+# menampilkan columns
+  st.write('MENAMPILKAN KOLOM')
   col1, col2, col3 = st.columns(3)
 
   with col1:
