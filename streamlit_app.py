@@ -98,11 +98,9 @@ tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 tab1.write("this is tab 1")
 tab2.write("this is tab 2")
 
-def main2() :
+
   st.line_chart(house_chart)
 
-if __name__ == '__main2__' : 
-  main2()
 
 if __name__ == '__main__' : 
   main()
