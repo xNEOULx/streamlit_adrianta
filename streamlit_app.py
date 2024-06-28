@@ -1,6 +1,6 @@
 import streamlit as st 
 import pandas as pd 
-import AgGrid
+import AgGrid from st_aggrid
 
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
