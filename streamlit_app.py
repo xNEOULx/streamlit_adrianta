@@ -10,11 +10,7 @@ def main() :
   st.write('Belajar Streamlit di Pusdiklat KU')
   
   st.write('Minimal Example')
-
-if __name__ == '__main__' : 
-  main()
-
-def main() : 
+ 
   st.header('Halaman Streamlit Adrianta Ras Sembiring')
   st.subheader('This is SubHeader')
   st.markdown('# Rendering Markdown ')
