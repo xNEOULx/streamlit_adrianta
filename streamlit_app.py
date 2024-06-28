@@ -50,7 +50,7 @@ def main() :
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
 
 # menampilkan sidebar
-  st.write('MENAMPILKAN SIDEBAR')
+  st.sidebar.write('MENAMPILKAN SIDEBAR')
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
 
