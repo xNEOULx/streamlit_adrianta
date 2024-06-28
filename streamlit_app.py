@@ -23,6 +23,7 @@ def main() :
   st.dataframe(house)
 
 # menampilkan metrics
+  st.write('MENAMPILKAN METRICS')
   st.write('Metrics')
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
@@ -38,11 +39,12 @@ def main() :
   st.write('Anda Memilih',radio_button)
 
 # menampilkan slider
+  st.write('MENAMPILKAN SLIDER')
   age_slider = st.slider('Berapa Usia Anda',0,100)
   st.write('Usia Anda',age_slider)
 
 # menampilkan input typing
-
+  st.write('INPUT TYPING')
   num_input = st.number_input('Input Berapapun')
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
 
